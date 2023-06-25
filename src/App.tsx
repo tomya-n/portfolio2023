@@ -4,7 +4,7 @@ import Main from './component/main/Main'
 import Footer from './component/footer/Footer'
 // import './App.css';
 import styled from 'styled-components';
-
+import { Reset } from 'styled-reset'
 
 const AppInner = styled.div`
   display: flex;
@@ -14,11 +14,14 @@ const AppInner = styled.div`
 
 function App() {
   return (
-      <AppInner>
-        <Header />
-          <Main />
-        <Footer />
-      </AppInner>
+    <>
+    <AppInner>
+      <Reset />
+      <Header />
+        <Main />
+      <Footer />
+    </AppInner>
+    </>
   );
 }
 
