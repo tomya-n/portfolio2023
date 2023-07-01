@@ -12,6 +12,7 @@ function Header() {
           <a href="/" className="page-title">
             <div className="main-name">Tom N</div>
             <div className="sub-name">Markup Engineer</div>
+            <div className="sub-name">おはようございます 日本</div>
           </a>
           <Links>
             <li>
