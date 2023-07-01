@@ -11,6 +11,10 @@ ${reset}
   font-family: 'Noto Sans', sans-serif !important;
   font-family: 'Noto Sans JP', sans-serif !important;
 }
+a{
+  text-decoration: none;
+  color: #000;
+}
 `;
 
 const AppInner = styled.div`
