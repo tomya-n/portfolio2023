@@ -1,6 +1,10 @@
-import './style.css';
+import styled from 'styled-components';
 
 function Header() {
+  const Links = styled.ul`
+    display: flex;
+  `;
+
   return (
     <>
       <header>
@@ -9,20 +13,17 @@ function Header() {
             <div className="main-name">Tom N</div>
             <div className="sub-name">Markup Engineer</div>
           </a>
-
-          <div className="links">
-            <ul>
-              <li>
-                <a href="/">TOP</a>
-              </li>
-              <li>
-                <a href="/">PROFILE</a>
-              </li>
-              <li>
-                <a href="/">CONTACT</a>
-              </li>
-            </ul>
-          </div>
+          <Links>
+            <li>
+              <a href="/">TOP</a>
+            </li>
+            <li>
+              <a href="/">PROFILE</a>
+            </li>
+            <li>
+              <a href="/">CONTACT</a>
+            </li>
+          </Links>
         </div>
       </header>
     </>
