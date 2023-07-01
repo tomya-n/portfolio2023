@@ -3,9 +3,9 @@ import './style.css';
 function Main() {
   return (
     <>
-    <main>
-      <h1>main</h1>
-    </main>
+      <main>
+        <h1>main</h1>
+      </main>
     </>
   );
 }

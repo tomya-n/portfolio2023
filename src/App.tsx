@@ -1,10 +1,10 @@
 import React from 'react';
 import Header from './component/header/Header';
-import Main from './component/main/Main'
-import Footer from './component/footer/Footer'
+import Main from './component/main/Main';
+import Footer from './component/footer/Footer';
 // import './App.css';
 import styled from 'styled-components';
-import { Reset } from 'styled-reset'
+import { Reset } from 'styled-reset';
 
 const AppInner = styled.div`
   display: flex;
@@ -15,12 +15,12 @@ const AppInner = styled.div`
 function App() {
   return (
     <>
-    <AppInner>
-      <Reset />
-      <Header />
+      <AppInner>
+        <Reset />
+        <Header />
         <Main />
-      <Footer />
-    </AppInner>
+        <Footer />
+      </AppInner>
     </>
   );
 }
