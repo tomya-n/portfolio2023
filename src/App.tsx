@@ -21,6 +21,8 @@ const AppInner = styled.div`
   display: flex;
   flex-flow: column;
   min-height: 100vh;
+  padding: 5px 0 10px;
+  box-sizing: border-box;
 `;
 
 function App() {

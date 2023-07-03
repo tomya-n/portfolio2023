@@ -1,7 +1,14 @@
+import styled from 'styled-components';
+
 function Footer() {
+  const FooterInner = styled.footer`
+    font-weight: 100;
+    text-align: center;
+  `;
+
   return (
     <>
-      <footer>Copyright © 2023 tom-n All Rights Reserved.</footer>
+      <FooterInner>Copyright © 2023 tom-n All Rights Reserved.</FooterInner>
     </>
   );
 }
