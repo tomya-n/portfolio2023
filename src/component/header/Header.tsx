@@ -8,14 +8,26 @@ function Header() {
     display: flex;
   `;
 
+  const Title = styled.a`
+    .main-name {
+      color: #26282a;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .sub-name {
+      color: #111111;
+      font-size: 14px;
+      font-weight: 100;
+    }
+  `;
   return (
     <>
       <header>
         <div className="wrapper">
-          <a href="/" className="page-title">
+          <Title>
             <div className="main-name">Tom N</div>
             <div className="sub-name">Markup Engineer</div>
-          </a>
+          </Title>
           <Links>
             <li>
               <a href="/">TOP</a>
