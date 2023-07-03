@@ -4,8 +4,7 @@ import Main from './component/main/Main';
 import Footer from './component/footer/Footer';
 import styled from 'styled-components';
 import { ThemeProvider } from 'styled-components';
-import { theme } from './theme/index';
-import { GlobalStyle } from './theme/setting/globalStyle';
+import { theme, GlobalStyle } from './theme/index';
 
 const AppInner = styled.div`
   display: flex;
