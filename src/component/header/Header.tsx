@@ -9,6 +9,7 @@ function Header() {
     justify-content: space-between;
     width: var(--min-width-pc);
     margin: 0 auto;
+    padding: 5px 0;
     .right {
       display: flex;
       justify-content: flex-end;
@@ -17,12 +18,44 @@ function Header() {
 
   const Links = styled.ul`
     display: flex;
+    align-items: center;
     a {
       display: block;
+      color: var(--color-gray-900);
+      font-weight: 300;
+      padding: 10px;
+      opacity: 1;
+      transition: all 0.2s ease 0s;
+      &:hover {
+        opacity: 0.7;
+        background: #dadada;
+      }
+    }
+    li {
+      /* margin: 0 10px; */
     }
     .icon {
       font-size: 2em;
-      width: 50px;
+      padding: 0 10px;
+      a {
+        padding: 0;
+        &:hover {
+          opacity: 0.7;
+          background: none;
+        }
+      }
+      &-twi {
+        a {
+          width: 31px;
+          border-radius: 50%;
+          border: 1px solid #1da1f2;
+          svg {
+            width: 70%;
+            margin: 0 auto;
+            display: block;
+          }
+        }
+      }
     }
   `;
 
@@ -64,7 +97,7 @@ function Header() {
             <Links>
               <li className="icon icon-twi">
                 <a href="https://twitter.com/home">
-                  <FontAwesomeIcon icon={faTwitter} style={{ color: '#4d9aff' }} />
+                  <FontAwesomeIcon icon={faTwitter} style={{ color: '#1da1f2' }} />
                 </a>
               </li>
               <li className="icon icon-github">
